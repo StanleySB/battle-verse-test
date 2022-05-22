@@ -1,0 +1,32 @@
+.weather {
+  &_currentCity {
+    max-width: 800px;
+    margin: auto;
+    .currentCity_title {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 24px;
+      color: #767676;
+      text-align: center;
+    }
+  }
+  &_itemContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &_addButton {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    border: none;
+    background: #9b51e0;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 14%), 0px 1px 10px rgb(0 0 0 / 12%), 0px 2px 4px rgb(0 0 0 / 20%);
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+}

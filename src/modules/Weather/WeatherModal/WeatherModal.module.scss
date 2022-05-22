@@ -1,0 +1,61 @@
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  background: rgba(11, 11, 11, 0.5);
+  &Container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20vh;
+    width: 750px;
+    left: calc(50% - 375px);
+    background: #ffffff;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.14), 0px 6px 30px rgba(0, 0, 0, 0.12), 0px 8px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 24px;
+  }
+  &_title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+  }
+  &_subtitle {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #767676;
+    margin-top: 16px;
+  }
+  &_input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    border-bottom: 1px solid #1b1b1b;
+    padding: 16px 0px;
+    margin-top: 50px;
+    ::placeholder {
+      color: #c1c1c1;
+    }
+    &[data-error="true"] {
+      border-bottom: 1px solid #ff0101;
+      color: #ff0101;
+    }
+  }
+  .buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+    &_item {
+      button {
+        margin-left: 30px;
+      }
+    }
+  }
+}
